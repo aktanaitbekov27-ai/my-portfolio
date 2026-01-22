@@ -1,45 +1,56 @@
 <!DOCTYPE html>
-
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Моё портфолио</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>my.portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #0f2027;
+    color: white;
+    text-align: center;
+}
+
+.card {
+    background: rgba(255,255,255,0.1);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 500px;
+}
+
+video {
+    width: 100%;
+    border-radius: 10px;
+}
+</style>
 </head>
+
 <body>
 
-    <header>
-        <h1>Айтбеков Актан</h1>
-        <p>Ученик 26 школы</p>
-    </header>
+<h1>my.portfolio</h1>
+<p>Ученик 26 школы</p>
+<p>Айтбеков Актан</p>
 
-    <main>
-        <section class="portfolio-title">
-            <h2>Моё портфолио</h2>
-        </section>
+<div class="card">
+    <h3>Проект 1</h3>
+    <video controls>
+        <source src="project.1.mp4" type="video/mp4">
+    </video>
+</div>
 
-        <div class="card">
-            <h3>Первый проект</h3>
-            <p>Проект на python.1</p>
-            <div class="video-container">
-                <iframe src="video.2.mp4" frameborder="0" allowfullscreen></iframe>
-            </div>
-        </div>
-
-        <div class="card">
-            <h3>Проект 2</h3>
-            <p>Проект на python/2.</p>
-            <div class="video-container">
-                <iframe src="https://youtu.be/KDfZ_jSNLqA?si=i523VD76HRkpcFkp" frameborder="0" allowfullscreen></iframe>
-            </div>
-        </div>
-    </main>
+<div class="card">
+    <h3>Проект 2</h3>
+    <video controls>
+        <source src="project2.mp4" type="video/mp4">
+    </video>
+</div>
 
 </body>
-
 </html>
-
 
 
 
